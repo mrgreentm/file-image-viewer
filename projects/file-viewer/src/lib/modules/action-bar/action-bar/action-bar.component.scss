@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+}
+
+.action-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  p {
+    margin: 0;
+  }
+  background-color: rgb(50, 54, 57);
+  color: #fff;
+  height: 60px;
+}

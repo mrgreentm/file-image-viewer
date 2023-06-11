@@ -1,4 +1,4 @@
-.container, .action-bar-container, .image-container {
+.container, .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,14 +9,7 @@
   background-color: #000;
   flex-direction: column;
 }
-.action-bar-container {
-  p {
-    margin: 0;
-  }
-  background-color: rgb(50, 54, 57);
-  color: #fff;
-  height: 60px;
-}
+
 .image-container {
   height: 100%;
   overflow: auto;

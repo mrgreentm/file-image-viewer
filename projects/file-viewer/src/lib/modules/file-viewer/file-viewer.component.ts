@@ -12,13 +12,6 @@ export class FileViewerComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  zoomIn() {
-    this.width += 10;
-  }
-  zoomOut() {
-    this.width -= 10;
-  }
-  download() {
-    this.downloadUrl.emit(this.imageUrl);
-  }
+
+
 }
