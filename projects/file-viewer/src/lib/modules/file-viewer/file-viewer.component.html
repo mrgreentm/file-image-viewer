@@ -1,7 +1,7 @@
 <div class="container">
   <app-action-bar
-    (zoomOut)="width = $event"
-    (zoomIn)="width = $event"
+    (zoomOut)="zoom($event)"
+    (zoomIn)="zoom($event)"
     [imageUrl]="imageUrl"
     (download)="downloadUrl.emit($event)"
     [width]="width"
