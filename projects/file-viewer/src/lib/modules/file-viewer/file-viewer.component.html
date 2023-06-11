@@ -2,11 +2,12 @@
   <app-action-bar
     (zoomOut)="zoom($event)"
     (zoomIn)="zoom($event)"
+    (print)="print($event)"
     [imageUrl]="imageUrl"
     (download)="downloadUrl.emit($event)"
     [width]="width"
   ></app-action-bar>
-  <div class="image-container">
-    <img loading="lazy" [ngStyle]="{ width: width + '%' }" [src]="imageUrl"/>
+  <div #image class="image-container">
+    <img  loading="lazy" [ngStyle]="{ width: width + '%' }" [src]="imageUrl"/>
   </div>
 </div>

@@ -11,6 +11,8 @@ export class ActionBarComponent implements OnInit {
   @Output('download') downloadUrl = new EventEmitter<string>();
   @Output('zoomIn') zoomInEvt = new EventEmitter<number>();
   @Output('zoomOut') zoomOutEvt = new EventEmitter<number>();
+  @Output('print') printEvt = new EventEmitter<boolean>();
+  printing: boolean = false;
 
   constructor() {}
 
@@ -27,5 +29,8 @@ export class ActionBarComponent implements OnInit {
 
   download() {
     this.downloadUrl.emit(this.imageUrl);
+  }
+  print() {
+    this.printEvt.emit(true);
   }
 }

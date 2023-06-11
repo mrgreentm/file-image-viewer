@@ -1,8 +1,9 @@
-<div class="container">
+<div *ngIf="!printing" class="container">
   <div class="action-bar-container">
     <mat-icon (click)="zoomOut()">zoom_out</mat-icon>
     <p class="percent-scale">{{ width }}%</p>
     <mat-icon (click)="zoomIn()">zoom_in</mat-icon>
     <mat-icon (click)="download()">get_app</mat-icon>
+    <mat-icon (click)="print()">print</mat-icon>
   </div>
 </div>
