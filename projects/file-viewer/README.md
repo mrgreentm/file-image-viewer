@@ -1,24 +1,76 @@
-# FileViewer
+# File Viewer Image
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
+A library for Angular v15+ that provides developers with a convenient way to create an image viewer component. It offers various functions for UI operations such as zoom in, zoom out, download, and printing. The library's selector is lib-file-viewer and it accepts an input imageUrl to display the desired image.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project file-viewer` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project file-viewer`.
-> Note: Don't forget to add `--project file-viewer` or else it will be added to the default project in your `angular.json` file. 
+To install the File Viewer Image library, run the following command:
 
-## Build
+```bash
+  npm i file-viewer-image
+```
 
-Run `ng build file-viewer` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage 
+1 - Import the *FileViewerModule* into your Angular module:
 
-## Publishing
+```typescript
+  import { NgModule } from '@angular/core';
+  import { FileViewerModule } from 'file-viewer-image';
 
-After building your library with `ng build file-viewer`, go to the dist folder `cd dist/file-viewer` and run `npm publish`.
+  @NgModule({
+    imports: [
+      // ...
+      FileViewerModule
+    ],
+    // ...
+  })
+  export class AppModule { }
+```
 
-## Running unit tests
+2 - Use the *lib-file-viewer* component in your Angular template:
 
-Run `ng test file-viewer` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```html
+  <lib-file-viewer [imageUrl]="imagePath"></lib-file-viewer>
+```
+Replace imagePath with the URL of the image you want to display.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Component Input
+The lib-file-viewer component accepts the following input:
+
+imageUrl: The URL of the image to display in the viewer.
+Features
+### Zoom In
+To zoom in on the image, use the zoom in function provided by the library. This allows users to magnify the image for a closer look.
+
+### Zoom Out
+To zoom out on the image, use the zoom out function provided by the library. This allows users to reduce the image size for a wider view.
+
+### Download
+The library offers a download function that allows users to download the displayed image. This is useful for saving the image locally or sharing it with others.
+
+### Printing
+Users can print the displayed image using the print function provided by the library. This enables easy printing of the image directly from the viewer.
+
+## Example
+Here's an example of how to use the File Viewer Image library in your Angular application:
+
+```typescript
+  import { Component } from '@angular/core';
+
+  @Component({
+    selector: 'app-image-viewer',
+    template: `
+      <lib-file-viewer [imageUrl]="imagePath"></lib-file-viewer>
+    `,
+  })
+  export class ImageViewerComponent {
+    imagePath = 'https://example.com/image.jpg';
+  }
+```
+Make sure to replace 'https://example.com/image.jpg' with the actual URL of the image you want to display.
+
+License
+This library is released under the MIT License. See LICENSE for more information.
+
+Feel free to contribute to this library by reporting issues, suggesting improvements, or submitting pull requests.
