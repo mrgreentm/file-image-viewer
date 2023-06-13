@@ -7,14 +7,12 @@
     "@angular/material": "^15.2.9",
     "@angular/cdk": "^15.2.9"
   },
-  "private":false,
+  "private": false,
   "dependencies": {
-    "tslib": "^2.3.0",
-    "@angular/material": "^15.2.9",
-    "@angular/cdk": "^15.2.9"
+    "tslib": "^2.3.0"
   },
   "scripts": {
-    "packagr":"ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p ng-package.json"
   },
   "sideEffects": false
 }
