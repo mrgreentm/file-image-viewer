@@ -2,6 +2,8 @@
 
 A library for Angular v15+ that provides developers with a convenient way to create an image viewer component. It offers various functions for UI operations such as zoom in, zoom out, download, and printing. The library's selector is lib-file-viewer and it accepts an input imageUrl to display the desired image.
 
+access source code on https://github.com/mrgreentm/file-image-viewer
+
 ## Installation
 
 To install the File Viewer Image library, run the following command:
@@ -74,3 +76,4 @@ License
 This library is released under the MIT License. See LICENSE for more information.
 
 Feel free to contribute to this library by reporting issues, suggesting improvements, or submitting pull requests.
+https://github.com/mrgreentm/file-image-viewer
