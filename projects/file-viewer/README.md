@@ -48,6 +48,13 @@ To zoom in on the image, use the zoom in function provided by the library. This 
 ### Zoom Out
 To zoom out on the image, use the zoom out function provided by the library. This allows users to reduce the image size for a wider view.
 
+
+### Rotate Left
+The library offers a rotate-left function that allows users to rotate the displayed image to the left.
+
+### Rotate Right
+The library also provides a rotate-right function that allows users to rotate the displayed image to the right.
+
 ### Download
 The library offers a download function that allows users to download the displayed image. This is useful for saving the image locally or sharing it with others.
 
