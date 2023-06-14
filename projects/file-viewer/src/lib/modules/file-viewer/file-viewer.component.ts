@@ -18,9 +18,13 @@ export class FileViewerComponent {
   @ViewChild('image') image!: ElementRef;
 
   width = 80;
+  rotation = 0;
 
   zoom(event: number) {
     this.width = event;
+  }
+  rotate(event: number | any) {
+    this.rotation = event;
   }
   print(event: boolean) {
     const dataToPrint = this.image.nativeElement.innerHTML;

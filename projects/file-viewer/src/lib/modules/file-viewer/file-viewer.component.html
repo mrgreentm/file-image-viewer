@@ -2,12 +2,14 @@
   <app-action-bar
     (zoomOut)="zoom($event)"
     (zoomIn)="zoom($event)"
+    (rotate)="rotate($event)"
     (print)="print($event)"
     [imageUrl]="imageUrl"
+    [rotation]="rotation"
     (download)="downloadUrl.emit($event)"
     [width]="width"
   ></app-action-bar>
   <div #image class="image-container">
-    <img  loading="lazy" [ngStyle]="{ width: width + '%' }" [src]="imageUrl"/>
+    <img  loading="lazy" [ngStyle]="{ width: width + '%', transform: 'rotate('+rotation+'deg)'}" [src]="imageUrl"/>
   </div>
 </div>

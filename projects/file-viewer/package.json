@@ -1,6 +1,9 @@
 {
   "name": "file-viewer-image",
   "version": "0.0.1",
+  "repository": {"url": "https://github.com/mrgreentm/file-image-viewer"},
+  "license": "MIT",
+  "keywords": ["angular", "image viewer", "jpg-png-viewer", "image-viewer"],
   "peerDependencies": {
     "@angular/common": "^15.1.0",
     "@angular/core": "^15.1.0"
